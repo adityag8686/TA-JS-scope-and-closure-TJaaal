@@ -96,7 +96,7 @@ function hello() {
 }
 
 hello.user = 'Sam'; // valid or invalid
-code is invalid as first is a function which will only execute when it is called whereas the second one stores the value of a hello function which has user as variable which is not available
+code is valid as  function is a like an object and object can add a element and stores the value
 ```
 
 9. What is higher order function explain with an example.
