@@ -1,7 +1,18 @@
 1. Create a function by your choice that accepts a callback function.
+function num(n,cb){
+  return cb(n);
+}
+function increment(add){
+  return add+1;
+}
 
 2. Create a function by you choice that returns a function reference.
-
+function num(n,cb){
+  return cb(n);
+}
+function increment(add){
+  return add+1;
+}
 3. Create a higher order function called `map` that takes two inputs:
    - An array of numbers/string/boolean etc
    - A 'callback' function - a function that is applied to each element of the array (inside of the function 'map')
@@ -9,9 +20,15 @@
 Have `map` return a new array filled with values that are the result of the 'callback' function on each element of the input array.
 
 ```js
-// Your code goes here
+function map(arr,cb){
+  let final = [];
+  for (let i= 0; i<arr.length; i++){
+    final.push(cb(arr[i]))
+  }
+  return final;
+}
 
-// Test Your Code
+
 function multiplyByTwo(n) {
   return n * 2;
 }
@@ -24,6 +41,11 @@ multiplyByTwo(2); //-> 4
 
 ```js
 // Your code goes here
+function forEach(arr, cb){
+  for (let i = 0; i< arr.length; i++){
+    cb(arr[i]);
+  }
+}
 
 // Test Your Code
 let alphabet = '';
