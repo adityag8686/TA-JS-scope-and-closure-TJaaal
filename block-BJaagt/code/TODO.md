@@ -79,6 +79,17 @@ for (var i = 0; i < 10; i++) {
   console.log(i, 'First'); // output
 }
 console.log(i, 'Second'); // output
+0 'First'
+VM51:2 1 'First'
+VM51:2 2 'First'
+VM51:2 3 'First'
+VM51:2 4 'First'
+VM51:2 5 'First'
+VM51:2 6 'First'
+VM51:2 7 'First'
+VM51:2 8 'First'
+VM51:2 9 'First'
+VM51:4 10 'Second'
 ```
 
 9. Go through the code below and write down the process of making decision about looking for the variable. Also write the output of the code below.
