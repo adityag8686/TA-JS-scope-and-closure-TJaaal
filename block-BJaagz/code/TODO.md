@@ -8,7 +8,7 @@
 function forEach(arr,cb) {
   arr.reduce((acc,cv,index,arr) =>{
     cb(cv,index,arr)
-  },0)
+  })
 }
 
 forEach(['Sam', 'Jon', 'Arya'], (name, i, arr) =>
@@ -24,8 +24,7 @@ forEach(['Sam', 'Jon', 'Arya'], (name, i, arr) =>
 
 ```js
 function map(arr,cb) {
- 
-  arr.reduce((acc,cv,index,arr) =>{
+ return arr.reduce((acc,cv,index,arr) =>{
     acc.push(cb(cv,index,arr));
     return acc;
   },[])
