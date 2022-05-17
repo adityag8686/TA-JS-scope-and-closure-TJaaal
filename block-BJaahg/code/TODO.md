@@ -14,6 +14,7 @@ console.log(
   window.lastName,
   window.knownAs
 );
+undefined undefined 'no one'
 ```
 
 2. Guess the output:
@@ -28,6 +29,7 @@ function fullName(a, b) {
 }
 
 console.log(window.fullName(firstName, lastName));
+AryaStark
 ```
 
 3. Make a Execution Context Diagram for the following JS and write the output.
@@ -50,6 +52,7 @@ fucntion addOne(num){
 }
 var two = addOne(1);
 console.log(one, two);
+syntax error
 ```
 
 5. Make a Execution Context Diagram for the following JS and write the output.
@@ -61,6 +64,7 @@ fucntion addOne(num){
 }
 var two = addOne(1);
 console.log(two);
+syntax error
 ```
 
 6. Make a Execution Context Diagram for the following JS and write the output.
@@ -72,6 +76,7 @@ const addOne = (num) => {
 };
 var two = addOne(1);
 console.log(two);
+ReferenceError: addOne is not defined
 ```
 
 7. Make a Execution Context Diagram for the following JS and write the output.
@@ -82,7 +87,7 @@ const addOne = (num) => {
   return num + 1;
 };
 var two = addOne(1);
-console.log(two);
+console.log(two); syntax error
 ```
 
 8. What will be the output of the following
@@ -108,7 +113,7 @@ function isAwesome() {
   }
   console.log(awesome);
 }
-isAwesome();
+isAwesome(); true
 ```
 
 10. What will be the output of the following
@@ -121,7 +126,7 @@ function isAwesome() {
   }
   console.log(awesome);
 }
-isAwesome();
+isAwesome(); undefined
 ```
 
 11. What will be the output of the following
@@ -136,6 +141,7 @@ function fullName(a, b) {
 }
 const name = fullName(firstName, lastName);
 console.log(name);
+undefined
 ```
 
 12. Guess the output of the code below with a reason.
@@ -147,6 +153,7 @@ function sayHello() {
 sayHello();
 
 console.log(name);
+undefined
 ```
 
 13. Guess the output of the code below with a reason.
@@ -165,6 +172,7 @@ if (true) {
   let name = 'Arya Stark';
 }
 console.log(name);
+undefined
 ```
 
 15. Guess the output of the code below with a reason.
@@ -174,6 +182,7 @@ for (var i = 0; i < 20; i++) {
   //
 }
 console.log(i);
+undefined
 ```
 
 16. Guess the output of the code below with a reason.
@@ -183,6 +192,7 @@ for (let i = 0; i < 20; i++) {
   //
 }
 console.log(i);
+i is not defined
 ```
 
 17. Guess the output and the reason behind that.
@@ -195,6 +205,7 @@ function sample() {
   console.log(username);
 }
 sample();
+undefined
 ```
 
 18. Guess the output and the reason behind that.
@@ -207,6 +218,7 @@ function sample() {
   console.log(username);
 }
 sample();
+username not defined
 ```
 
 19. Guess the output and the reason behind that.
