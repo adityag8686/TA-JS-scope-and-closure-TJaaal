@@ -18,14 +18,13 @@ function outer(str){
 ```js
 // Your code goes here
 function delay(cb,time){
-   return cb(time)
+   return funcion(){
+     setTimeout(cb,time);
+   }
 }
 
-function inner(str){
-return str+str;
-}
 
-setTimeout(inner,1000);
+
 ```
 
 3. Write a function with a closure. The first function should only take one argument, someone's last name, and return the inner function. The returned `inner` function should take one more argument, someone's first name. When inner function when called it should console.log both the first name and the last name with a space.
@@ -55,6 +54,17 @@ lastNameLee('Lynne'); //logs 'Lynne Lee'
 ```js
 function storyWriter() {
   // Your code goes here
+  let story = "";
+  return {
+    addWords : function (word){
+      story = story + word;
+      return story
+    },
+    erase : function (word){
+      story = "";
+      return story;
+    }
+  }
 }
 
 // Test
