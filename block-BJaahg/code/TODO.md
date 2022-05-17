@@ -41,6 +41,7 @@ fucntion addOne(num){
 var one = addOne(0);
 var two = addOne(1);
 console.log(one, two);
+1 2
 ```
 
 4. Make a Execution Context Diagram for the following JS and write the output.
@@ -52,7 +53,7 @@ fucntion addOne(num){
 }
 var two = addOne(1);
 console.log(one, two);
-syntax error
+1 2
 ```
 
 5. Make a Execution Context Diagram for the following JS and write the output.
@@ -64,7 +65,8 @@ fucntion addOne(num){
 }
 var two = addOne(1);
 console.log(two);
-syntax error
+1
+2
 ```
 
 6. Make a Execution Context Diagram for the following JS and write the output.
@@ -76,7 +78,7 @@ const addOne = (num) => {
 };
 var two = addOne(1);
 console.log(two);
-ReferenceError: addOne is not defined
+addOne is not defined
 ```
 
 7. Make a Execution Context Diagram for the following JS and write the output.
@@ -87,7 +89,7 @@ const addOne = (num) => {
   return num + 1;
 };
 var two = addOne(1);
-console.log(two); syntax error
+console.log(two);  add One is not defined
 ```
 
 8. What will be the output of the following
@@ -101,6 +103,7 @@ function isAwesome() {
   console.log(awesome);
 }
 isAwesome();
+undefined
 ```
 
 9. What will be the output of the following
@@ -126,7 +129,7 @@ function isAwesome() {
   }
   console.log(awesome);
 }
-isAwesome(); undefined
+isAwesome(); not defined
 ```
 
 11. What will be the output of the following
@@ -141,7 +144,7 @@ function fullName(a, b) {
 }
 const name = fullName(firstName, lastName);
 console.log(name);
-undefined
+Arya Stark
 ```
 
 12. Guess the output of the code below with a reason.
@@ -153,7 +156,7 @@ function sayHello() {
 sayHello();
 
 console.log(name);
-undefined
+nameis not defined
 ```
 
 13. Guess the output of the code below with a reason.
@@ -163,6 +166,7 @@ if (true) {
   var name = 'Arya Stark';
 }
 console.log(name);
+Arya STark
 ```
 
 14. Guess the output of the code below with a reason.
@@ -182,7 +186,7 @@ for (var i = 0; i < 20; i++) {
   //
 }
 console.log(i);
-undefined
+20
 ```
 
 16. Guess the output of the code below with a reason.
@@ -205,7 +209,7 @@ function sample() {
   console.log(username);
 }
 sample();
-undefined
+JOhn Snow
 ```
 
 18. Guess the output and the reason behind that.
@@ -233,6 +237,8 @@ function sample() {
   console.log(username, 'second');
 }
 sample();
+John Snow
+John SNow
 ```
 
 20. Guess the output and the reason behind that.
@@ -247,6 +253,8 @@ function sample() {
   console.log(username, 'second');
 }
 sample();
+John Snow 
+arya Stark
 ```
 
 21. Guess the output and the reason behind that.
@@ -260,6 +268,9 @@ function sample(...args) {
 }
 
 sample('First', 'Second', 'Third');
+Hello I am First
+Hello I am Second
+Hello I am Third
 ```
 
 22. Guess the output and the reason behind that.
@@ -273,6 +284,9 @@ function sample(...args) {
 }
 
 sample('First', 'Second', 'Third');
+Hello I am First
+Hello I am Second
+Hello I am Third
 ```
 
 23. Guess the output and the reason behind that.
@@ -286,6 +300,7 @@ if (true) {
   let username = 'Hello World!';
   myFunc();
 }
+canot acess username before intialisation
 ```
 
 24. Guess the output and the reason behind that.
@@ -302,6 +317,7 @@ function outer() {
 }
 
 outer();
+I love this movie called MAD MAX: FURRY ROAD
 ```
 
 25. Guess the output and the reason behind that.
@@ -319,6 +335,7 @@ function outer() {
 }
 
 outer();
+I love this movie called BEFORE SUNRISE
 ```
 
 26. Guess the output and the reason behind that.
@@ -339,6 +356,7 @@ function outer() {
   inner();
 }
 outer();
+I love this movie called GONE GIRL 
 ```
 
 30. Using reduce find the final value when the initial value passed is `100`. You have to pass the output of one function into the input of next function in the array `allFunctions` starts with `addOne` ends with `half`.
@@ -366,5 +384,6 @@ let allFunctions = [
   half,
 ];
 
+allFunction.reduce((acc,cv) => cv(acc),100);
 // Answer is: 447
 ```
