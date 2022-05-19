@@ -79,7 +79,7 @@ function nTimes(cb, times, ...rest) {
    let repeat = 0;
   return function (){
     if (repeat >= times){
-      alert(`cant be called`)
+      alert(`cant be called`) 
     }else{
       cb(...rest);
       repeat +=1;
@@ -93,5 +93,5 @@ let logThreeTimes = nTimes(log, 3, 'Hello Arya');
 logThreeTimes(); // log message "Hello Arya" (1)
 logThreeTimes(); // log message "Hello Arya" (2)
 logThreeTimes(); // log message "Hello Arya" (3)
-log(); // return undefinde (can't be called)
+logThreeTimes(); // return undefinde (can't be called)
 ```
